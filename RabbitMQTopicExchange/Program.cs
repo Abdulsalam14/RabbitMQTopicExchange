@@ -1,5 +1,5 @@
 using RabbitMQ.Client;
-using RabbitMQTopicExchange.Services;
+using RabbitMQTopicClient.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,14 +7,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 
-
-var factory = new ConnectionFactory() { HostName = "amqps://tnwekfim:BtEntszuzgThFjJTyaJF9caqQs_pLe5k@goose.rmq2.cloudamqp.com/tnwekfim" };
+var factory = new ConnectionFactory() {Uri=new Uri("amqps://tnwekfim:BtEntszuzgThFjJTyaJF9caqQs_pLe5k@goose.rmq2.cloudamqp.com/tnwekfim") };
 var connection = factory.CreateConnection();
-builder.Services.AddSingleton<TopicConsumerService>(new TopicConsumerService(connection));
-
-
+builder.Services.AddSingleton < EchangeTopicService > (new EchangeTopicService(connection));
 
 var app = builder.Build();
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

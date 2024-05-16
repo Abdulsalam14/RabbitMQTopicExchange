@@ -17,28 +17,23 @@ body {
   margin-bottom: 60px;
 }
 
-
-.client{
-
-    border: 1px solid orange;
-}
-
-#selectForm1 {
+#selectForm2 {
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    border: 1px solid orange;
+    padding:30px;
 }
 
-    #selectForm1 > label {
+    #selectForm2 > label {
         padding: 5px 10px;
-        border: 1px solid lightgray;
+        border: 1px solid orange;
         display: inline-block;
         margin-top: 10px;
-        width: 20%;
-    }
-    
-    #selectForm1>button{
-        margin-top:10px;
         width:20%;
-        border:1px solid orange;
+    }
+
+    #selectForm2 > button {
+        margin-top: 10px;
+        width: 20%;
+        border: 1px solid orange;
     }

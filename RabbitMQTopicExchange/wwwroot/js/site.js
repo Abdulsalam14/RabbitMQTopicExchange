@@ -1,4 +1,16 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿
+        var checkboxes = document.querySelectorAll('input[type="checkbox"][name="color"]');
+checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener("change", function () {
+        if (checkbox.checked) {
+            checkbox.parentElement.style.backgroundColor = "orange";
+        } else {
+            checkbox.parentElement.style.backgroundColor = ""; // Arka plan rengini kaldırmak için boş string kullanabilirsiniz.
+        }
+    });
+});
 
-// Write your JavaScript code.
+document.getElementById("selectForm1").addEventListener("submit", function (event) {
+    event.preventDefault();
+    //console.log("Selected colors:", selectedColors);
+});

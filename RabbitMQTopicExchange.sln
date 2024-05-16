@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQTopicExchange", "RabbitMQTopicExchange\RabbitMQTopicExchange.csproj", "{A235E6D9-3174-4015-9ADD-9F246E6619B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQTopicConsumer", "RabbitMQTopicExchange\RabbitMQTopicConsumer.csproj", "{A235E6D9-3174-4015-9ADD-9F246E6619B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQTopicClient", "RabbitMQTopicClient\RabbitMQTopicClient.csproj", "{141793F8-BFC7-4924-B8DF-A95F29910350}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQTopicExchange", "RabbitMQTopicClient\RabbitMQTopicExchange.csproj", "{141793F8-BFC7-4924-B8DF-A95F29910350}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

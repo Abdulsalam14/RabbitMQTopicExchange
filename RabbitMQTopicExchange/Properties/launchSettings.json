@@ -3,16 +3,16 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:56328",
-      "sslPort": 44309
+      "applicationUrl": "http://localhost:16456",
+      "sslPort": 44345
     }
   },
   "profiles": {
-    "RabbitMQTopicExchange": {
+    "RabbitMQTopicClient": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:7044;http://localhost:5137",
+      "applicationUrl": "https://localhost:7038;http://localhost:5204",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
